@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>EOF</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="pandoc.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title">EOF</h1>
+</div>
+<p>EOF (End Of File) representa o fim de arquivo. Enquanto se está lendo um arquivo e não existe mais conteúdo a ser lido é gerada essa informação no sistema, EOF, dizendo que o arquivo acabou.</p>
+<p>A entrada padrão também é considerada um arquivo e em uma execução sem redirecionamento a combinação <code>^d</code> (control + d) gera um EOF. Quando a acontece o redirecionamento (a execução no estilo: <code>./meuprograma &lt; arquivo)</code> o conteúdo do arquivo é enviado ao programa pela entrada padrão e quando todo o conteúdo do arquivo for consumido o EOF será gerado.</p>
+<p>A função <code>scanf</code> no C, trata esse efeito. Por isso ela deve ser bem estudada. Como um resumo rápido: A função <code>scanf</code> retorna quantos elementos de <code>%</code> foram lidos com sucesso, então uma chamada do tipo:</p>
+<div class="sourceCode"><pre class="sourceCode C"><code class="sourceCode c">scanf(<span class="st">&quot;%d %lf&quot;</span>, &amp;a,&amp;b)</code></pre></div>
+<p>Retornará 2 quando ambos números forem lidos com sucesso, e:</p>
+<div class="sourceCode"><pre class="sourceCode C"><code class="sourceCode c">scanf(<span class="st">&quot;%s %d %s %d&quot;</span>,str1,&amp;a,str2,&amp;b)</code></pre></div>
+<p>Retornará 4 quando todos forem lidos com sucesso, e:</p>
+<div class="sourceCode"><pre class="sourceCode C"><code class="sourceCode c">scanf(<span class="st">&quot;%d&quot;</span>,&amp;a)</code></pre></div>
+<p>Retornará 1 quando o número for lido com sucesso.</p>
+<p>Caso o retorno de scanf for diferente da quantidade de <code>%</code>, significa que algum erro ocorreu, geralmente o EOF.</p>
+<p>Segue o trecho do manual do scanf (man 3 scanf) que trata do valor de retorno da função:</p>
+<h4 id="return-values">RETURN VALUES</h4>
+<blockquote>
+<p>These functions return the number of input items assigned. This can be fewer than provided for, or even zero, in the event of a matching failure. Zero indicates that, although there was input available, no conversions were assigned; typically this is due to an invalid input character, such as an alphabetic character for a `%d' conversion. The value EOF is returned if an input failure occurs before any conversion such as an end-of-file occurs. If an error or end-of-file occurs after conversion has begun, the number of conversions which were successfully completed is returned.</p>
+</blockquote>
+<h1 id="tarefa">TAREFA</h1>
+<p>Para este problema você deverá ler diversos números e imprimir a quantidade de números lidos.</p>
+<h2 id="entrada">ENTRADA</h2>
+<p>A entrada é composta por um único caso de teste composta por diversas linhas e termina com EOF. Cada linha de um caso de teste possui um número inteiro <span class="math inline"><em>N</em></span> ( <span class="math inline">0 ≤ <em>N</em> ≤ 10<sup>7</sup></span> ).</p>
+<h2 id="saída">SAÍDA</h2>
+<p>A saída é composta por uma única linha contendo um número inteiro que represente a quantidade de números lidos.</p>
+<h2 id="exemplos">EXEMPLOS</h2>
+<hr />
+<h3 id="exemplo-de-entrada">Exemplo de Entrada</h3>
+<pre><code>2
+3
+4
+5
+6
+7
+8
+9</code></pre>
+<h4 id="exemplo-de-saída">Exemplo de Saída</h4>
+<pre><code>8</code></pre>
+<hr />
+<h3 id="exemplo-de-entrada-1">Exemplo de Entrada</h3>
+<pre><code>1000
+300000
+35530
+3920753
+3297323</code></pre>
+<h4 id="exemplo-de-saída-1">Exemplo de Saída</h4>
+<pre><code>5</code></pre>
+<div id="footer">
+<p>Author: Bruno Ribas</p>
+</div>
+</body>
+</html>

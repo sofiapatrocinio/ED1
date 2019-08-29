@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Encontro Politécnico</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="pandoc.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title">Encontro Politécnico</h1>
+</div>
+<p>Dois professores (PA e PB)<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> combinaram de encontrar-se no Centro Politécnico (CP) às 15h00 numa quarta-feira. Como os professores são grandes estudiosos de movimentos retilíneos uniformes, pensaram em aplicar um de seus estudos mais recentes. Os dois professores dividiram o CP em um grande quadriculado. A cada passo, cada professor escolhe uma direção (Norte, Sul, Leste ou Oeste) e anda até o quadrado imediatamente vizinho na direção escolhida.</p>
+<p>O quadriculado do CP é um plano cartesiano com origem em <span class="math inline">(1, 1)</span> como sendo o limite inferior esquerdo e as direções Norte e Sul andam no eixo Y, e as direções Leste e Oeste no eixo X. As direções Norte e Leste incrementam a posição de seus respectivos eixos e Sul e Oeste fazem o oposto.</p>
+<p>Dada uma sequência de passos, você deve dizer se os professores se encontraram em algum momento, i.e, se eles ficaram no mesmo quadrado ao mesmo tempo, se algum professor saiu do CP ou se eles não se encontraram.</p>
+<h2 id="entrada">Entrada</h2>
+<p>A primeira linha da entrada contém dois inteiros <span class="math inline"><em>N</em></span> e <span class="math inline"><em>M</em></span> que indicam respectivamente o número de colunas e o número de linhas do CP (<span class="math inline">1 ≤ <em>N</em>, <em>M</em> ≤ 10<sup>5</sup></span>). A segunda linha contém um inteiro P (<span class="math inline">0 ≤ <em>P</em> ≤ 1000</span>) que indica quantos movimentos cada professor fez. Depois são apresentadas <span class="math inline"><em>P</em></span> linhas contendo dois números inteiros <span class="math inline"><em>A</em></span> e <span class="math inline"><em>B</em></span>, indicando a direção tomada pelos professores <span class="math inline"><em>P</em><em>A</em></span> e <span class="math inline"><em>P</em><em>B</em></span>, respectivamente, naquele passo. Os inteiros <span class="math inline"><em>A</em></span> e <span class="math inline"><em>B</em></span> podem assumir os seguintes valores: <span class="math inline">1</span> (Norte), <span class="math inline">2</span> (Sul), <span class="math inline">3</span> (Leste) e <span class="math inline">4</span> (Oeste). O professor <span class="math inline"><em>P</em><em>A</em></span> inicia seu trajeto sempre na posição <span class="math inline">(1, 1)</span> e o professor <span class="math inline"><em>P</em><em>B</em></span> na posição <span class="math inline">(<em>N</em>, <em>M</em>)</span>.</p>
+<h2 id="saída">Saída</h2>
+<p>Seu programa deve imprimir:</p>
+<ul>
+<li>Caso os professores tenham se encontrado: as coordenadas do encontro e o passo em que ocorreu.</li>
+<li>Caso o(s) professor(es) tenha(m) saído do CP: as coordenadas em que saíram e o passo em que ocorreu. Se ambos professores saíram no mesmo passo imprima apenas a informação sobre o professor PA.</li>
+<li>Caso nenhuma das anteriores ocorra, imprimir: &quot;Nao se encontraram&quot;.</li>
+</ul>
+<p>Verifique os exemplos para entender melhor o formato da saída.</p>
+<h2 id="exemplos">Exemplos</h2>
+<h3 id="exemplo-de-entrada">Exemplo de entrada</h3>
+<pre><code>5 5
+4
+3 2
+3 2
+3 2
+3 4</code></pre>
+<h4 id="saída-para-o-exemplo-de-entrada-acima">Saída para o exemplo de entrada acima</h4>
+<pre><code>Nao se encontraram</code></pre>
+<h3 id="exemplo-de-entrada-1">Exemplo de entrada</h3>
+<pre><code>5 5
+4
+3 2
+3 2
+3 2
+3 2</code></pre>
+<h4 id="saída-para-o-exemplo-de-entrada-acima-1">Saída para o exemplo de entrada acima</h4>
+<pre><code>Encontraram-se na posicao (5,1) no passo 4</code></pre>
+<h3 id="exemplo-de-entrada-2">Exemplo de entrada</h3>
+<pre><code>5 5
+4
+1 2
+1 2
+4 1
+1 4</code></pre>
+<h4 id="saída-para-o-exemplo-de-entrada-acima-2">Saída para o exemplo de entrada acima</h4>
+<pre><code>PA saiu na posicao (0,3) no passo 3</code></pre>
+<div id="footer">
+<p>Author: Bruno Ribas</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>A saber: PA é o prof. Castellone, e PB é o prof. Anthov, ambos do DINF<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+</body>
+</html>

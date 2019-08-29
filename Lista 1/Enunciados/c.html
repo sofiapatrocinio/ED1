@@ -1,0 +1,84 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:14.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:14.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_005{font-family:Arial,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:12.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="7a40f6b8-ca71-11e9-9d71-0cc47a792c0a_id_7a40f6b8-ca71-11e9-9d71-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-297px;top:0px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="7a40f6b8-ca71-11e9-9d71-0cc47a792c0a_id_7a40f6b8-ca71-11e9-9d71-0cc47a792c0a_files/background1.jpg" width=595 height=841></div>
+<div style="position:absolute;left:64.91px;top:50.52px" class="cls_002"><span class="cls_002">Problema:   Idade em dias, meses e anos</span></div>
+<div style="position:absolute;left:64.91px;top:74.78px" class="cls_005"><span class="cls_005">Arquivo: idade_diasmesesanos.c</span></div>
+<div style="position:absolute;left:64.91px;top:106.86px" class="cls_003"><span class="cls_003">Faça um programa em C que leia a data de nascimento (dia, mês e ano) de uma pessoa e a data</span></div>
+<div style="position:absolute;left:64.91px;top:120.41px" class="cls_003"><span class="cls_003">de hoje (dia, mês e ano).  Calcule e mostre a idade aproximada da pessoa em dias, meses e anos</span></div>
+<div style="position:absolute;left:64.91px;top:133.96px" class="cls_003"><span class="cls_003">somente se as datas forem válidas. </span><span class="cls_005">Desconsidere anos bissextos, suponha que o ano seja um valor</span></div>
+<div style="position:absolute;left:64.91px;top:147.51px" class="cls_005"><span class="cls_005">inteiro positivo, que todos os meses possuem 31 dias e que existem apenas 12 meses válidos.</span></div>
+<div style="position:absolute;left:64.91px;top:184.57px" class="cls_003"><span class="cls_003">Write a C program that reads the date of birth (day, month, year) of a person and today’s date</span></div>
+<div style="position:absolute;left:64.91px;top:198.12px" class="cls_003"><span class="cls_003">(date, month, year). Calculate and shows his approximate age in days, months and years only if the</span></div>
+<div style="position:absolute;left:64.91px;top:211.67px" class="cls_003"><span class="cls_003">dates are valid.  </span><span class="cls_005">Ignore leap years, suppose that the year is a positive integer number, all months</span></div>
+<div style="position:absolute;left:64.91px;top:225.22px" class="cls_005"><span class="cls_005">have 31 days and suppose that exists 12 valid months.</span></div>
+<div style="position:absolute;left:64.91px;top:258.34px" class="cls_004"><span class="cls_004">Entrada</span></div>
+<div style="position:absolute;left:64.91px;top:284.96px" class="cls_003"><span class="cls_003">A primeira linha da entrada contém três números inteiros que indicam respectivamente o dia, o mês</span></div>
+<div style="position:absolute;left:64.91px;top:298.51px" class="cls_003"><span class="cls_003">e o ano da data de nascimento da pessoa.</span></div>
+<div style="position:absolute;left:64.91px;top:312.05px" class="cls_003"><span class="cls_003">A segunda linha da entrada contém três números inteiros que indicam respectivamente o dia, o mês</span></div>
+<div style="position:absolute;left:64.91px;top:325.60px" class="cls_003"><span class="cls_003">e o ano de hoje.</span></div>
+<div style="position:absolute;left:64.91px;top:357.68px" class="cls_003"><span class="cls_003">Os casos de testes para o ano podem assumir um valor entre 0 à 9999, para os meses podem variar</span></div>
+<div style="position:absolute;left:64.91px;top:371.23px" class="cls_003"><span class="cls_003">entre 1 à 15 e para os dias podem variar entre 1 à 35, ou seja:</span></div>
+<div style="position:absolute;left:262.15px;top:413.79px" class="cls_003"><span class="cls_003">0 ≤ ano ≤ 9999</span></div>
+<div style="position:absolute;left:271.80px;top:430.33px" class="cls_003"><span class="cls_003">1 ≤ mês ≤ 15</span></div>
+<div style="position:absolute;left:275.47px;top:446.87px" class="cls_003"><span class="cls_003">1 ≤ dia ≤ 35</span></div>
+<div style="position:absolute;left:64.91px;top:470.82px" class="cls_003"><span class="cls_003">Sendo necessário o tratamento para datas inválidas.</span></div>
+<div style="position:absolute;left:64.91px;top:507.88px" class="cls_003"><span class="cls_003">The first entry line contains three integers numbers which respectively indicate the day, the month</span></div>
+<div style="position:absolute;left:64.91px;top:521.43px" class="cls_003"><span class="cls_003">and the year of the person’s birth date.</span></div>
+<div style="position:absolute;left:64.91px;top:534.98px" class="cls_003"><span class="cls_003">The second entry line contains three integers numbers which respectively indicate the day, the</span></div>
+<div style="position:absolute;left:64.91px;top:548.53px" class="cls_003"><span class="cls_003">month and the year of today.</span></div>
+<div style="position:absolute;left:64.91px;top:580.61px" class="cls_003"><span class="cls_003">The test cases for the year may be a value between 0 to 9999, for the month may be a value between</span></div>
+<div style="position:absolute;left:64.91px;top:594.16px" class="cls_003"><span class="cls_003">1 to 15 and for the day may assume a value between 1 to 35, as in:</span></div>
+<div style="position:absolute;left:260.65px;top:617.56px" class="cls_003"><span class="cls_003">0 ≤ year ≤ 9999</span></div>
+<div style="position:absolute;left:261.01px;top:634.10px" class="cls_003"><span class="cls_003">1 ≤ month ≤ 15</span></div>
+<div style="position:absolute;left:274.57px;top:650.64px" class="cls_003"><span class="cls_003">1 ≤ day ≤ 35</span></div>
+<div style="position:absolute;left:64.91px;top:678.99px" class="cls_003"><span class="cls_003">Being necessary the correct handling for invalid dates.</span></div>
+<div style="position:absolute;left:64.91px;top:712.11px" class="cls_004"><span class="cls_004">Sa</span></div>
+<div style="position:absolute;left:78.92px;top:712.11px" class="cls_004"><span class="cls_004">ıda</span></div>
+<div style="position:absolute;left:64.91px;top:738.73px" class="cls_003"><span class="cls_003">Seu programa deve imprimir a idade da pessoa em anos, meses e dias, nesta ordem e com cada</span></div>
+<div style="position:absolute;left:64.91px;top:752.28px" class="cls_003"><span class="cls_003">número deve ser separado por uma quebra de linha. Se as datas inseridas não for válida, exiba a</span></div>
+<div style="position:absolute;left:64.91px;top:765.83px" class="cls_003"><span class="cls_003">mensagem data invalida.</span></div>
+<div style="position:absolute;left:296.06px;top:795.72px" class="cls_003"><span class="cls_003">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-297px;top:851px;width:595px;height:841px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="7a40f6b8-ca71-11e9-9d71-0cc47a792c0a_id_7a40f6b8-ca71-11e9-9d71-0cc47a792c0a_files/background2.jpg" width=595 height=841></div>
+<div style="position:absolute;left:64.91px;top:53.95px" class="cls_003"><span class="cls_003">Verifique os exemplos para entender melhor o formato da saıda.</span></div>
+<div style="position:absolute;left:64.91px;top:91.02px" class="cls_003"><span class="cls_003">Your program must show the person’s age in years, months and days, strictly in this order, with</span></div>
+<div style="position:absolute;left:64.91px;top:104.56px" class="cls_003"><span class="cls_003">each number separated by a new line. If any of the entry numbers are not valid, show the message</span></div>
+<div style="position:absolute;left:64.91px;top:118.11px" class="cls_003"><span class="cls_003">data invalida.</span></div>
+<div style="position:absolute;left:64.91px;top:136.64px" class="cls_003"><span class="cls_003">Check the examples below for a better understanding of how the output must be.</span></div>
+<div style="position:absolute;left:64.91px;top:169.79px" class="cls_004"><span class="cls_004">Exemplos</span></div>
+<div style="position:absolute;left:70.89px;top:205.56px" class="cls_003"><span class="cls_003">Exemplo de entrada</span></div>
+<div style="position:absolute;left:259.64px;top:205.56px" class="cls_003"><span class="cls_003">Sa´ıda para o exemplo de entrada</span></div>
+<div style="position:absolute;left:70.89px;top:228.08px" class="cls_003"><span class="cls_003">19 01 2005</span></div>
+<div style="position:absolute;left:259.64px;top:228.08px" class="cls_003"><span class="cls_003">14</span></div>
+<div style="position:absolute;left:70.89px;top:241.63px" class="cls_003"><span class="cls_003">11 04 2019</span></div>
+<div style="position:absolute;left:259.64px;top:241.63px" class="cls_003"><span class="cls_003">2</span></div>
+<div style="position:absolute;left:259.64px;top:255.18px" class="cls_003"><span class="cls_003">23</span></div>
+<div style="position:absolute;left:70.89px;top:282.02px" class="cls_003"><span class="cls_003">Exemplo de entrada</span></div>
+<div style="position:absolute;left:259.64px;top:282.02px" class="cls_003"><span class="cls_003">Sa´ıda para o exemplo de entrada</span></div>
+<div style="position:absolute;left:70.89px;top:304.54px" class="cls_003"><span class="cls_003">32 07 1987</span></div>
+<div style="position:absolute;left:259.64px;top:304.54px" class="cls_003"><span class="cls_003">data invalida</span></div>
+<div style="position:absolute;left:70.89px;top:318.09px" class="cls_003"><span class="cls_003">05 02 1995</span></div>
+<div style="position:absolute;left:296.06px;top:795.72px" class="cls_003"><span class="cls_003">2</span></div>
+</div>
+
+</body>
+</html>

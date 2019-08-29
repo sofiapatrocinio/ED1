@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>Conta de Água</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="pandoc.css" type="text/css" />
+</head>
+<body>
+<div id="header">
+<h1 class="title">Conta de Água</h1>
+</div>
+<p>A empresa local de abastecimento de água, a Saneamento Básico da Cidade (SBC), está promovendo uma campanha de conservação de água, distribuindo cartilhas e promovendo ações demonstrando a importância da água para a vida e para o meio ambiente.</p>
+<p>Para incentivar mais ainda a economia de água, a SBC alterou os preços de seu fornecimento de forma que, proporcionalmente, aqueles clientes que consumirem menos água paguem menos pelo metro cúbico. Todo cliente paga mensalmente uma assinatura de R$ 7, que inclui uma franquia de 10 <span class="math inline"><em>m</em><sup>3</sup></span> de água. Isto é, para qualquer consumo entre 0 e 10 <span class="math inline"><em>m</em><sup>3</sup></span>, o consumidor paga a mesma quantia de R$ 7 reais (note que o valor da assinatura deve ser pago mesmo que o consumidor não tenha consumido água). Acima de 10 <span class="math inline"><em>m</em><sup>3</sup></span> cada metro cúbico subsequente tem um valor diferente, dependendo da faixa de consumo. A SBC cobra apenas por quantidades inteiras de metros cúbicos consumidos. A tabela abaixo especifica o preço por metro cúbico para cada faixa de consumo:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">Faixa de Consumo (<span class="math inline"><em>m</em><sup>3</sup></span>)</th>
+<th align="center">Preço</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">até 10</td>
+<td align="center">incluso na franquia</td>
+</tr>
+<tr class="even">
+<td align="center">11 a 30</td>
+<td align="center">R$ 1</td>
+</tr>
+<tr class="odd">
+<td align="center">31 a 100</td>
+<td align="center">R$ 2</td>
+</tr>
+<tr class="even">
+<td align="center">101 em diante</td>
+<td align="center">R$ 5</td>
+</tr>
+</tbody>
+</table>
+<p>Assim, por exemplo, se o consumo foi de 120 <span class="math inline"><em>m</em><sup>3</sup></span> , o valor da conta é:</p>
+<ul>
+<li>7 reais da assinatura básica;</li>
+<li>20 reais pelo consumo no intervalo 11 - 30 <span class="math inline"><em>m</em><sup>3</sup></span>;</li>
+<li>140 reais pelo consumo no intervalo 31 - 100 <span class="math inline"><em>m</em><sup>3</sup></span>;</li>
+<li>100 reais pelo consumo no intervalo 101 - 120 <span class="math inline"><em>m</em><sup>3</sup></span>.</li>
+</ul>
+<p>Logo o valor total da conta de água é R$ 267.</p>
+<p>Escreva um programa que, dado o consumo de uma residência em <span class="math inline"><em>m</em><sup>3</sup></span>, calcula o valor da conta de água daquela residência.</p>
+<h2 id="entrada">Entrada</h2>
+<p>A entrada é composta por uma única linha contendo um inteiro <span class="math inline"><em>N</em></span> ( <span class="math inline">0 ≤ <em>N</em> ≤ 10<sup>3</sup></span> ) que indica o consumo de água da residência em <span class="math inline"><em>m</em><sup>3</sup></span>.</p>
+<h2 id="saída">Saída</h2>
+<p>A saída é composta de uma única linha, contendo o valor da conta de água naquela residência.</p>
+<h3 id="exemplo-de-entrada-1">Exemplo de Entrada 1</h3>
+<pre><code>68</code></pre>
+<h3 id="exemplo-de-saída-1">Exemplo de Saída 1</h3>
+<pre><code>103</code></pre>
+<h3 id="exemplo-de-entrada-2">Exemplo de Entrada 2</h3>
+<pre><code>14</code></pre>
+<h3 id="exemplo-de-saída-2">Exemplo de Saída 2</h3>
+<pre><code>11</code></pre>
+<h3 id="exemplo-de-entrada-3">Exemplo de Entrada 3</h3>
+<pre><code>42</code></pre>
+<h3 id="exemplo-de-saída-3">Exemplo de Saída 3</h3>
+<pre><code>51</code></pre>
+<div id="footer">
+<p>Author: John L. Gardenghi, adaptado do problema SPOJ CONTA1 de Wanderley Guimarães</p>
+</div>
+</body>
+</html>
